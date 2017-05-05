@@ -1,0 +1,15 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	color: #969696;
+	background-color: #F2F2F2;
+}
+
+div {
+	padding: 10px;
+}
+
+h1 {
+	color: #D91147;
+	font-size: 30px;
+}
