@@ -4,15 +4,14 @@ function Squad(nombre,edad,hobbies){
 	this.hobbies = hobbies;
 
 	this.lista = function(){
-			var final;
+			var final = "";
 			for(var i = 0; i < this.hobbies.length; i++){
 				final += "<li>" + this.hobbies[i] + "</li>";
 			}
-			return final
-
+			return final;
 	}
 	this.mostrar = function (){
-		return ("<b>" + "Nombre: " + "</b>" + this.nombre + "<br>" + "<b>" + "Edad: " +  "</b>"  + this.edad + "<br>" + "<b>" +  "Hobbies: " + "</b>" + "<ul>" + this.lista() +"</ul>")
+		return ("<b>" + "Nombre: " + "</b>" + this.nombre + "<br>" + "<b>" + "Edad: " +  "</b>"  + this.edad + " años" + "<br>" + "<b>" +  "Hobbies: " + "</b>" + "<ul>" + this.lista() +"</ul>")
 	}
 }
 
@@ -27,12 +26,4 @@ var valeT = new Squad("Valentina Toledo", 20, ["Jugar fútbol", "Música", "Acti
 var kari = new Squad("Karina Palacios", 24, ["Ver series", "Compartir con amigos", "Leer y escuchar música"]);
 var gilia = new Squad ("Gilia Gongora", 28, ["La destrución", "Satán", "Infierno"]);
 
-datosValeL.innerHTML = valeLopez.mostrar();
-datosTrini.innerHTML = trini.mostrar();
-datosDiana.innerHTML = diana.mostrar();
-datosDani.innerHTML = dani.mostrar();
-datosPez.innerHTML = pez.mostrar();
-datosMari.innerHTML = mari.mostrar();
-datosValeT.innerHTML = valeT.mostrar();
-datosKari.innerHTML = kari.mostrar();
-datosGilia.innerHTML = gilia.mostrar();
+datos.innerHTML = valeLopez.mostrar() + "<br>" + trini.mostrar() + "<br>" + diana.mostrar() + "<br>" + dani.mostrar() + "<br>" + pez.mostrar() + "<br>" + mari.mostrar() + "<br>" + valeT.mostrar() + "<br>" + kari.mostrar() + "<br>" + gilia.mostrar();
