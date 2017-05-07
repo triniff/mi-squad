@@ -1,7 +1,8 @@
-function Squad(nombre,edad,hobbies){
+function Squad(nombre,edad,hobbies, imagen){
 	this.nombre = nombre
 	this.edad = edad
-	this.hobbies = hobbies;
+	this.hobbies = hobbies
+	this.imagen = imagen
 
 	this.lista = function(){
 			var final = "";
@@ -11,12 +12,12 @@ function Squad(nombre,edad,hobbies){
 			return final;
 	}
 	this.mostrar = function (){
-		return ("<b>" + "Nombre: " + "</b>" + this.nombre + "<br>" + "<b>" + "Edad: " +  "</b>"  + this.edad + " años" + "<br>" + "<b>" +  "Hobbies: " + "</b>" + "<ul>" + this.lista() +"</ul>")
+		return ("<b>" + "Nombre: " + "</b>" + this.nombre + "<br>" + "<b>" + "Edad: " +  "</b>"  + this.edad + " años" + "<br>" + "<b>" +  "Hobbies: " + "</b>" + "<ul>" + this.lista() +"</ul>" + this.imagen)
 	}
 }
 
 
-var valeLopez = new Squad ("Valentina Lopez", 25, ["Tarot", "Idiomas", "Películas mudas"]);
+var valeLopez = new Squad ("Valentina Lopez", 25, ["Tarot", "Idiomas", "Películas mudas"], "<img src='../img/gilia.jpg' alt='imagen'>");
 var trini = new Squad("Trinidad Fuentes", 26, ["Video juegos", "PugLover", "Dormir"]);
 var diana = new Squad("Diana Monsalve", 29,  ["Hacer scratch", "Música", "Negocios"]);
 var dani = new Squad("Daniela Sanchez", 24,["Escuchar música", "Cantar", "Ver series"]);
