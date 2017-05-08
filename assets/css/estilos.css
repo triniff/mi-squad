@@ -17,6 +17,7 @@ h1 {
 
 img {
 	width: 100px;
+	height: 100px;
 	float: left;
 	padding: 20px;
 }
